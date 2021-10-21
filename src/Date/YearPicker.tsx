@@ -2,13 +2,13 @@ import * as React from 'react'
 import { FlatList, StyleSheet, View } from 'react-native'
 import { Text, TouchableRipple, useTheme } from 'react-native-paper'
 import { range } from '../utils'
-
-const ITEM_HEIGHT = 62
 var date = new Date(); 
 const startYear = date.getFullYear()
 date.setFullYear(date.getFullYear() + 2);
 
 const endYear =date.getFullYear()
+const ITEM_HEIGHT = 62
+
 
 const years = range(startYear, endYear)
 
