@@ -2,12 +2,13 @@ import * as React from 'react'
 import { FlatList, StyleSheet, View } from 'react-native'
 import { Text, TouchableRipple, useTheme } from 'react-native-paper'
 import { range } from '../utils'
-import {addYears,format} from 'date-fns'
 
 const ITEM_HEIGHT = 62
+var date = new Date(); 
+const startYear = date.getFullYear()
+date.setFullYear(date.getFullYear() + 1);
 
-const startYear = Number(format(new Date(),'yyyy'))
-const endYear =Number(format(addYears(new Date(),1),'yyyy'))
+const endYear =date.getFullYear()
 
 const years = range(startYear, endYear)
 
