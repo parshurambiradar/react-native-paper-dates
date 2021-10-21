@@ -2,11 +2,13 @@ import * as React from 'react'
 import { FlatList, StyleSheet, View } from 'react-native'
 import { Text, TouchableRipple, useTheme } from 'react-native-paper'
 import { range } from '../utils'
+import {addYears,format} from 'date-fns'
 
 const ITEM_HEIGHT = 62
 
-const startYear = 1800
-const endYear = 2200
+const startYear = Number(format(new Date(),'yyyy'))
+const endYear =Number(format(addYears(new Date(),1),'yyyy'))
+
 const years = range(startYear, endYear)
 
 export default function YearPicker({
