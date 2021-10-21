@@ -6,7 +6,7 @@ import { range } from '../utils'
 const ITEM_HEIGHT = 62
 var date = new Date(); 
 const startYear = date.getFullYear()
-date.setFullYear(date.getFullYear() + 1);
+date.setFullYear(date.getFullYear() + 2);
 
 const endYear =date.getFullYear()
 
