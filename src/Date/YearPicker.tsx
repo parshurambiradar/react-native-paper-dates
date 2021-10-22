@@ -4,7 +4,7 @@ import { Text, TouchableRipple, useTheme } from 'react-native-paper'
 import { range } from '../utils'
 var date = new Date(); 
 const startYear = date.getFullYear()
-date.setFullYear(date.getFullYear() + 2);
+date.setFullYear(date.getFullYear() + 1);
 
 const endYear =date.getFullYear()
 const ITEM_HEIGHT = 62
